@@ -1,0 +1,288 @@
+#suggestion{
+    font-size:12px;
+    position:absolute;
+    max-height:360px;
+    min-width:180px;
+    overflow:auto;
+    overflow-x:hidden;
+    overflow-y:auto;
+    padding:0px;
+    margin:0px;
+    background-color:#FFF;
+    border:1px solid #dfdfdf;
+    margin-top:3px;
+    font-family:Arial,Helvetica,Geneva,Swiss,SunSans-Regular,sans-serif;
+    list-style-type:none;
+}
+
+
+#suggestion li.mapLink{
+    background:none;
+}
+
+li#lastinput,li#topmatches{
+    background-color: #efefef !important;
+}
+
+
+#minimap{
+    display:block;
+    overflow:hidden;
+    border:1px solid #333333
+}
+
+#waiting{
+    padding-left:10px;
+    margin-left:10px;
+}
+
+#suggestion li.infoLabel, #suggestion li.infoLabel,#suggestion li.infoLabelselected {
+    background:none; border-bottom:1px solid #d4d4d4;
+}
+
+#suggestion li.suggContent{
+    background: none;
+    font-size:11px;
+    padding:0;
+}
+
+#suggestion li.furtherMatchesselected a,#suggestion li.furtherMatches a:hover{
+    color: #e3e3e3; text-decoration:underline;
+}
+
+#suggestion li.furtherMatches a{
+    color:#ffffff;
+    text-decoration:none;
+}
+
+
+#suggestion li.adrselected,#suggestion li.oebbselected{
+    background-color:#bfd7e3;
+    color:#4d9dc6;
+}
+
+#suggestion li.infoLabelselected{
+   background-image:none;
+   background-color:#bfd7e3;
+}
+
+#suggestion li.furtherMatches, #suggestion li.furtherMatchesselected{
+    margin-left:0px;
+    background-color: #5d5d5d;
+    padding:2px;
+    padding-left:20px;
+    padding-top:2px
+}
+
+#note{
+   padding-top:10px !important;
+   padding-bottom:10px !important;
+   padding-right:10px !important;
+}
+
+#suggestion li{
+    padding-left:18px;
+    padding-top:2px;
+    padding-bottom:2px;
+    white-space:nowrap;
+    font-size:.9em;
+    cursor:pointer;
+    margin-left:0px;
+}
+
+#suggestion .selected,#suggestion li.poiselected,#suggestion li.adrselected {
+    background-color:#bfd7e3;
+    color:#4d9dc6;
+}
+
+#HFS img.suggicon{
+    vertical-align:top;
+}
+
+.typefilter{
+    background-image:none !important;
+    padding-left:20px !important;
+}
+.typefilter label {
+    cursor:pointer;
+}
+
+.suggestButton{
+    border:none;
+    height:18px;
+    margin-left:-2px;
+    width:20px;
+    cursor:pointer;
+}
+
+
+/* alltype suggest definitions */
+#yes,#stopinfo,#no{
+   margin-top:3px;
+   margin-bottom:3px;
+   border-top: 1px solid #006669;
+   border-bottom: 1px solid #006669;
+   padding:2px;
+   background-color:#054F16;
+   width:470px;
+   color: white;
+}
+#stopinfo{
+   background-color: #DF7237;
+}
+
+#no{
+   background-color:#AF0C00;
+}
+
+#stopinfo a,#stopinfo a:hover,#yes a,#yes a:hover, #no a,#no a:hover{
+   color:white;
+}
+#yes a:hover,#stopinfo a:hover,#no a:hover{
+   font-weight:bold;
+}
+
+#newroute{
+   min-height:20px;
+}
+
+.tab, .tabactive{
+   float:left;
+   width:auto;
+
+   padding:5px;
+   font-weight:bold;
+}
+
+.tabactive{
+   background-color:#006669;
+   font-weight:bold;
+   color:white;
+}
+
+.tabactive:hover,.tab:hover{
+   background-color:#FFFFAA;
+   font-weight:bold;
+   color:#333;
+
+   cursor:pointer;
+}
+
+.contentCell{
+   background-color: #efefef;
+   width:400px;
+   min-height:20px;
+
+   padding:3px;
+}
+
+.tabsMenu{
+   margin-bottom:10px;
+}
+
+#contentWindow{
+   padding-top:29px;
+}
+
+#allinonesearch{
+   display:none;
+}
+
+.infobox{
+   border: 1px dotted rgb(51, 51, 51); margin: 10px; padding: 5px;
+   background-color: #DFDAC3;
+/*   background-image:url(../img/icon_arrow_2_hover.gif);*/
+}
+
+#resultWindow,#embedWindow{
+   width:397px;
+   padding:4px;
+}
+
+#genHTMLbutton{
+  background-color:#333;
+  color:#fff;
+  cursor:pointer;
+  padding:2px;
+
+  font-size:12px;
+  border:1px solid white;
+}
+#genHTMLbutton:focus{
+  color:#333;
+}
+
+#embedWindow{
+  background-color:#DFDFDF;
+  min-height:15px;
+}
+
+#mapResult{
+  padding-left:260px;
+  font-size:11px;
+}
+
+th{
+  text-align:left;
+}
+
+.highlight{
+   font-weight:bold;
+}
+
+.topmatches{
+   padding:5px;
+   color:white;
+}
+
+.match,.matchhover{
+   padding:5px;
+   padding-left:15px;
+}
+
+#HFS .matchhover{
+   color:#333333;
+   background-color:#DFDFDF;
+
+}
+
+#HFS .matchhover a,#HFS .matchhover a:hover{
+   color: #333333;
+   background-color:#DFDFDF;
+
+}
+
+#hintHeader{
+   background-color:#e9e9e9;
+   text-align:right;
+   font-size:11px;
+}
+
+#hintContent{
+   background-color:#E9E9E9;
+   padding:9px;
+
+}
+
+#geomap,#resultMapContainer{
+    display:block;
+    overflow:hidden;
+    border:1px solid #D4D4D4;
+    z-index:20000;
+    background-color:#e9e9e9;
+    padding:9px;
+}
+#geomap{
+    padding:0px;
+    border:1px solid #000000;
+}
+
+#waiting{
+    padding-left:10px;
+    margin-left:10px;
+}
+
+#hints{
+    z-index:200000;
+    border:1px solid #D4D4D4;
+}
